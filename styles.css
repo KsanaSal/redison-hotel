@@ -15,6 +15,7 @@
     --color-primary-light: #e4e4e4;
     --color-text-dark: #292929;
     --color-text-dark-30: rgba(41, 41, 41, 0.3);
+    --color-text-dark-60: rgba(41, 41, 41, 0.6);
     --color-text-medium: #a9a9a9;
     --shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
     --shadow-hover: 10px 12px 15px 0 rgba(255, 255, 255, 0.25);
@@ -661,4 +662,106 @@ button {
 }
 .about-card-text {
     color: var(--color-text-dark-30);
+}
+
+/* Reviews styles */
+.reviews {
+    background-color: var(--color-light);
+    padding: 100px 0 100px 0;
+    color: var(--color-text-dark);
+}
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 300px;
+    height: 100%;
+}
+.reviews-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.reviews-info-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.reviews-info-quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reviews-info-stars {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.reviews-info-star {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-primary-medium);
+}
+.reviews-info-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text-dark-60);
+}
+.reviews-photos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 225px;
+    height: 115px;
+}
+.reviews-photos-list {
+    display: flex;
+    flex-direction: row;
+}
+.reviews-photos-item {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #d9d9da;
+    border: 2.5px solid var(--color-light);
+}
+.reviews-photos-item-first {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.reviews-photos-item-second {
+    position: absolute;
+    top: 0;
+    left: 42px;
+    z-index: 1;
+}
+.reviews-photos-item-third {
+    position: absolute;
+    top: 0;
+    left: 84px;
+    z-index: 2;
+}
+.reviews-photos-item-four {
+    position: absolute;
+    top: 0;
+    right: 42px;
+    z-index: 3;
+}
+.reviews-photos-item-five {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+}
+.reviews-photos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reviews-photos-text {
+    color: var(--color-text-dark-60);
 }
