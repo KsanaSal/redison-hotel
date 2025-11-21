@@ -8,22 +8,24 @@
     </head>
     <body>
         <header class="header">
-            <nav class="header-nav">
-                <a class="header-logo-link" href="/">
-                    <img
-                        class="header-logo"
-                        src="./images/logo/logo.png"
-                        alt="Logo"
-                /></a>
-                <ul class="header-nav-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#room">Room</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="header-nav-button">Book Now</button>
-            </nav>
+            <div class="container">
+                <nav class="header-nav">
+                    <a class="header-logo-link" href="/">
+                        <img
+                            class="header-logo"
+                            src="./images/logo/logo.png"
+                            alt="Logo"
+                    /></a>
+                    <ul class="header-nav-list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#room">Room</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="header-nav-button">Book Now</button>
+                </nav>
+            </div>
         </header>
         <main>
             <section class="section hero">
@@ -79,7 +81,11 @@
                 </div>
             </section>
             <section id="services" class="section services">
-                <img src="./images/services/banner.png" alt="Banner" />
+                <img
+                    class="services-banner"
+                    src="./images/services/banner.png"
+                    alt="Banner"
+                />
                 <div class="services-container container">
                     <ul class="services-list">
                         <li class="services-item">
@@ -133,57 +139,154 @@
                     </ul>
                 </div>
             </section>
-            <section>
-                <h2>Why You Should Stay Here</h2>
-                <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequat.
-                </p>
-                <article>
-                    <article>
-                        <span>1</span>
-                        <h3>Provide the best choice of Room.</h3>
-                        <p>
+            <section class="section public">
+                <div class="public-container container">
+                    <div class="public-content">
+                        <h2 class="public-title">
+                            Why You Should
+                            <span class="public-title-color">Stay Here</span>
+                        </h2>
+                        <p class="public-text">
                             Amet minim mollit non deserunt ullamco est sit
                             aliqua dolor do amet sint. Velit officia consequat.
                         </p>
-                    </article>
-                    <article>
-                        <span>2</span>
-                        <h3>Low price with Best Quality</h3>
-                        <p>
-                            Amet minim mollit non deserunt ullamco est sit
-                            aliqua dolor do amet sint. Velit officia consequat.
-                        </p>
-                    </article>
-                    <article>
-                        <span>3</span>
-                        <h3>Restaurant Service</h3>
-                        <p>
-                            Amet minim mollit non deserunt ullamco est sit
-                            aliqua dolor do amet sint. Velit officia consequat.
-                        </p>
-                    </article>
-                </article>
-                <ul>
-                    <li>
-                        <img src="" alt="Rooms" />
-                        <h3Cody>Fisher</h3Cody>
-                        <p>Give Rating<span>4.5</span></p>
-                    </li>
-                    <li>
-                        <img src="" alt="Rooms" />
-                        <h3Cody>Albert Flores</h3Cody>
-                        <p>Give Rating<span>4.2</span></p>
-                    </li>
-                    <li>
-                        <img src="" alt="Rooms" />
-                        <h3Cody>Devon Lane</h3Cody>
-                        <p>Give Rating<span>4.8</span></p>
-                    </li>
-                </ul>
-                <img src="" alt="Rooms" />
-                <img src="" alt="Rooms" />
+                    </div>
+                    <div class="public-info">
+                        <article class="public-info-list">
+                            <article class="public-info-item">
+                                <span class="public-info-number inter-semibold"
+                                    >1</span
+                                >
+                                <div class="public-info-text">
+                                    <h3 class="public-info-title">
+                                        Provide the best choice of Room.
+                                    </h3>
+                                    <p class="public-info-description">
+                                        Amet minim mollit non deserunt ullamco
+                                        est sit aliqua dolor do amet sint. Velit
+                                        officia consequat.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="public-info-item">
+                                <span class="public-info-number inter-semibold"
+                                    >2</span
+                                >
+                                <div class="public-info-text">
+                                    <h3 class="public-info-title">
+                                        Low price with Best Quality
+                                    </h3>
+                                    <p class="public-info-description">
+                                        Amet minim mollit non deserunt ullamco
+                                        est sit aliqua dolor do amet sint. Velit
+                                        officia consequat.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="public-info-item">
+                                <span class="public-info-number inter-semibold"
+                                    >3</span
+                                >
+                                <div class="public-info-text">
+                                    <h3 class="public-info-title">
+                                        Restaurant Service
+                                    </h3>
+                                    <p class="public-info-description">
+                                        Amet minim mollit non deserunt ullamco
+                                        est sit aliqua dolor do amet sint. Velit
+                                        officia consequat.
+                                    </p>
+                                </div>
+                            </article>
+                        </article>
+                        <div class="public-info-rating">
+                            <div
+                                class="public-info-card public-info-card-first"
+                            >
+                                <div class="public-info-card-img">
+                                    <img
+                                        src="./images/public/photo-1.png"
+                                        alt="Photo 1"
+                                    />
+                                </div>
+                                <div class="public-info-card-text">
+                                    <h3 class="public-info-card-title">
+                                        Cody Fisher
+                                    </h3>
+                                    <p
+                                        class="public-info-card-description inter-regular"
+                                    >
+                                        Give Rating
+                                        <span
+                                            class="public-info-card-description-color inter-medium"
+                                            >4.5</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="public-info-card public-info-card-second"
+                            >
+                                <div class="public-info-card-img">
+                                    <img
+                                        src="./images/public/photo-2.png"
+                                        alt="Photo 1"
+                                    />
+                                </div>
+                                <div class="public-info-card-text">
+                                    <h3 class="public-info-card-title">
+                                        Albert Flores
+                                    </h3>
+                                    <p
+                                        class="public-info-card-description inter-regular"
+                                    >
+                                        Give Rating<span
+                                            class="public-info-card-description-color inter-medium"
+                                            >4.2</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="public-info-card public-info-card-third"
+                            >
+                                <div class="public-info-card-img">
+                                    <img
+                                        src="./images/public/photo-3.png"
+                                        alt="Photo 1"
+                                    />
+                                </div>
+                                <div class="public-info-card-text">
+                                    <h3 class="public-info-card-title">
+                                        Devon Lane
+                                    </h3>
+                                    <p
+                                        class="public-info-card-description inter-regular"
+                                    >
+                                        Give Rating<span
+                                            class="public-info-card-description-color inter-medium"
+                                            >4.8</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="public-info-img-up">
+                                <img
+                                    class="public-info-img-room"
+                                    src="./images/services/banner.png"
+                                    alt="Room"
+                                />
+                            </div>
+                            <div class="public-info-img">
+                                <img
+                                    class="public-info-img-bedroom"
+                                    src="./images/public/bedroom.png"
+                                    alt="Bedroom"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <p>Our Room</p>
